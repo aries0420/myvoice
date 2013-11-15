@@ -111,7 +111,7 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
-  background: url('/assets/bg.jpg') no-repeat center center fixed;
+  background: url('/assets/dawn.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -127,7 +127,7 @@ body {
 /* Services */
 
 .services {
-  background: #7fbbda;
+  background: #3B3B2D;
   padding: 50px 0;
   color: #ffffff;
 }
@@ -181,7 +181,7 @@ i.service-icon {
 
 .call-to-action {
   color: #ffffff;
-  background: #0a5175;
+  background: #595959;
   padding: 50px 0;
 }
 
@@ -222,15 +222,15 @@ i.scroll:hover {
 @media (max-width: 768px) {
 
   .header {
-	background: url('/assets/bg.jpg') no-repeat center center scroll;
+        background: url('/assets/dawn.jpg') no-repeat center center scroll;
   }
 
   .callout {
-	background: url('/assets/callout.jpg') no-repeat center center scroll;
+        background: url('/assets/callout.jpg') no-repeat center center scroll;
   }
 
   .map {
-	height: 75%;
+        height: 75%;
   }
 
 }
