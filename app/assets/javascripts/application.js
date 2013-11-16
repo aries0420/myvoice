@@ -10,14 +10,14 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
+//= require modernizr.custom
 //= require bootstrap.min
-//= require AnimOnScroll
-//= require classie
-//= require imagesloaded
 //= require main
 //= require masonry.pkgd.min
-//= require modernizr.custom
+//= require imagesloaded
+//= require classie
+//= require AnimOnScroll
+//= require jquery
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .

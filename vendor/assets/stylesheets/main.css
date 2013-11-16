@@ -209,7 +209,7 @@ hr {
     transition: all .1s ease-in-out;
 }
 #headerwrap {
-    background: url(../img/header-bg1.jpg) no-repeat center top;
+    background: url(/assets/header-bg1.jpg) no-repeat center top;
     margin-top: -10px;
     padding-top: 20px;
     text-align: center;
@@ -251,7 +251,7 @@ hr {
     padding: 0;
 }
 #serviceswrap {
-    background: url(../img/services-bg.jpg) no-repeat center top;
+    background: url(/assets/services-bg.jpg) no-repeat center top;
     margin-top: -10px;
     padding-top: 20px;
     text-align: center;
@@ -276,7 +276,7 @@ hr {
     margin-top: 150px;
 }
 #aboutwrap {
-    background: url(../img/about-bg.jpg) no-repeat center top;
+    background: url(/assets/about-bg.jpg) no-repeat center top;
     margin-top: -10px;
     padding-top: 20px;
     text-align: center;
@@ -301,7 +301,7 @@ hr {
     margin-top: 150px;
 }
 #portwrap {
-    background: url(../img/portfolio-bg.jpg) no-repeat center top;
+    background: url(/assets/portfolio-bg.jpg) no-repeat center top;
     margin-top: -10px;
     padding-top: 20px;
     text-align: center;
@@ -334,7 +334,7 @@ hr {
     color: #fff;
 }
 #sp-standout {
-    background: url(../img/sp-standout-bg.jpg) no-repeat center top;
+    background: url(/assets/sp-standout-bg.jpg) no-repeat center top;
     margin-top: -10px;
     padding-top: 20px;
     text-align: center;
