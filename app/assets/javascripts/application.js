@@ -11,13 +11,13 @@
 // about supported directives.
 //
 //= require modernizr.custom
+//= require jquery
 //= require bootstrap.min
 //= require main
 //= require masonry.pkgd.min
 //= require imagesloaded
 //= require classie
 //= require AnimOnScroll
-//= require jquery
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
