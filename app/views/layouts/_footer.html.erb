@@ -1,0 +1,107 @@
+<!-- Footer -->
+
+<div id="social" class="container">
+  <div class="row mt">
+    <div class="col-lg-12">
+      <h1>social</h1>
+      <p>Join me on my social networks for all the latest updates, breaking news, announcements and more.</p>
+      <br>
+    </div><!-- col-lg-12 -->
+  </div><!-- row -->
+</div><!-- container -->
+
+<!-- SOCIAL FOOTER --->
+<section id="#"></section>
+<div id="sf">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2 dg">
+        <h4 class="ml">LINKEDIN</h4>
+        <p class="centered"><a href="http://www.linkedin.com/in/kangiechan" target="_blank"><i class="fa fa-linkedin"></i></a></p>
+        <p class="ml">> connect professionally</p>
+      </div>
+      <div class="col-lg-2 lg">
+        <h4 class="ml">GITHUB</h4>
+        <p class="centered"><a href="https://github.com/aries0420" target="_blank"><i class="fa fa-github-alt"></i></a></p>
+        <p class="ml">> collaborate &nbsp;&nbsp;&nbsp; code together</p>
+      </div>
+      <div class="col-lg-2 dg">
+        <h4 class="ml">WEIBO</h4>
+        <p class="centered"><a href="http://www.weibo.com/275769955" target="_blank"><i class="fa fa-weibo"></i></a></p>
+        <p class="ml">> 随时随地分享 &nbsp;&nbsp;新鲜事儿</p>
+      </div>
+      <div class="col-lg-2 lg">
+        <h4 class="ml">FACEBOOK</h4>
+        <p class="centered"><a href="https://www.facebook.com/kangiechan" target="_blank"><i class="fa fa-facebook"></i></a></p>
+        <p class="ml">> become a &nbsp;&nbsp;&nbsp;&nbsp;friend</p>
+      </div>
+      <div class="col-lg-2 dg">
+        <h4 class="ml">TWITTER</h4>
+        <p class="centered"><a href="https://twitter.com/ikangiec" target="_blank"><i class="fa fa-twitter"></i></a></p>
+        <p class="ml">> follow me &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      </div>
+      <div class="col-lg-2 lg">
+        <h4 class="ml">GOOGLE +</h4>
+        <p class="centered"><a href="https://plus.google.com/u/2/104563957091641780522" target="_blank"><i class="fa fa-google-plus"></i></a></p>
+        <p class="ml">> add me to your circle</p>
+      </div>
+    </div><!-- row -->
+  </div><!-- container -->
+</div><!-- Social Footer -->
+
+<div class="container">
+  <div class="row">
+  <div class="col-md-6 col-md-offset-3 text-center">
+    <div class="top-scroll">
+      <a href="#top"><i class="fa fa-arrow-circle-up scroll fa-3x"></i></a>
+    </div>
+    <hr>
+    <p>Copyright &copy; kangiechan.com 2013</p>
+  </div>
+</div></div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script>
+  new AnimOnScroll( document.getElementById( 'grid' ), {
+    minDuration : 0.4,
+    maxDuration : 0.7,
+    viewportFactor : 0.2
+  } );
+</script>
+
+<!-- Custom JavaScript for the Side Menu and Smooth Scrolling - Put in a custom JavaScript file to clean this up -->
+<script>
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+</script>
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+</script>
+<script>
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+</script>
+
+<!-- /Footer -->
