@@ -1,9 +1,12 @@
 Myvoice::Application.routes.draw do
+  # get "resumes/index"
   # get "static/home"
   # get "static/about"
   # get "static/contact"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
+
+  resources :resumes
 
   # You can have the root of your site routed with "root"
   root 'static#home'

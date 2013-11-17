@@ -1,0 +1,49 @@
+<%= form_for @resume, :html => {:multipart => true, :class => "form-group"} do |f| %>
+
+  <% if @resume.errors.any? %>
+    <div id="error_explanation" class="alert alert-danger">
+      <h3><%= pluralize(@resume.errors.count, "error") %>
+        prohibited this entry from being saved:</h3>
+      <ul>
+      <% @resume.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :company %>
+    <%= f.text_field :company, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :description %>
+    <%= f.text_area :description, class: "form-control", rows: "10" %>
+  </div>
+  <div class="form-group">
+    <%= f.label "Start Date" %>
+    <%= f.date_field :start_date, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label "End Date" %>
+    <%= f.date_field :end_date, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :project %>
+    <%= f.text_field :project, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :rating %>
+    <%= f.select :rating, [["5", "5"], ["4", "4"], ["3", "3"], ["2", "2"], ["1", "1"]], class: "form-control input-lg" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :url %>
+    <%= f.text_field :url, class: "form-control" %>
+  </div>
+  <%= f.submit class: "btn btn-green" %>
+  <p class="btn btn-default"><%= link_to "Back To Full Resume", resumes_path %></p>
+<% end %><br>

@@ -1,0 +1,42 @@
+<!-- CLIENT INFORMATION -->
+<div id="lg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-lg-offset-1 desc">
+        <h3>Work Experience</h3>
+        <br>
+        <h5><b>Title:</b> <%= @resume.title %></h5>
+        <% if !@resume.company.nil? %>
+          <h5><b>Company:</b> <%= @resume.company %></h5>
+        <% end %>
+        <h5><b>Description:</b></h5>
+        <p class="tm"><%= @resume.description %></p>
+        <% if !@resume.start_date.nil? %>
+          <h5><b>Started:</b> <%= @resume.start_date %></h5>
+        <% end %>
+        <% if !@resume.end_date.nil? %>
+          <h5><b>Ended:</b> <%= @resume.end_date %></h5>
+        <% end %>
+        <% if !@resume.rating.nil? %>
+          <h5><b>Rating:</b> <%= @resume.rating %></h5>
+        <% end %><br><br>
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-1 desc">
+        <% if !@resume.project.nil? %>
+        <h3>Project Desctription</h3>
+          <p><%= @resume.project %></p>
+        <% end %>
+        <% if !@resume.url.nil? %>
+          <p><i class="fa fa-link"></i> <%= link_to "Visit Site", @resume.url, target: "_blank"%></p>
+        <% end %>
+      </div>
+
+      <div class="col-lg-10 col-lg-offset-1 desc">
+        <p class="btn btn-default"><%= link_to "Edit Resume Entry", edit_resume_path %></p>
+        <p class="btn btn-default"><%= link_to "Delete Resume Entry", @resume, method: :delete, confirm: "Are you sure you want to delete this resume entry?" %></p>
+        <p class="btn btn-default"><%= link_to "Back To Full Resume", resumes_path %></p>
+      </div>
+    </div><!-- row -->
+  </div><!-- container -->
+</div><!-- lg -->
