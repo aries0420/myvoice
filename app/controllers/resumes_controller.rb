@@ -12,7 +12,11 @@ class ResumesController < ApplicationController
 
     if @resume.save
       flash[:notice] = "New resume entry has been added."
-      redirect_to resumes_path
+      # redirect_to resumes_path
+      respond_to do |format|
+        format.html { redirect_to @resume }
+        format.js
+      end
     else
       render "new"
     end
@@ -30,7 +34,7 @@ class ResumesController < ApplicationController
     @resume = Resume.find(params[:id])
     if @resume.update(resume_params)
       flash[:notice] = "This resume entry has been updated."
-      redirect_to resume_url
+      redirect_to @resume
     else
       render "edit"
     end
@@ -39,7 +43,11 @@ class ResumesController < ApplicationController
   def destroy
     @resume = Resume.find(params[:id])
     @resume.destroy
-    redirect_to resumes_path
+    # redirect_to resumes_path
+    respond_to do |format|
+      format.html { redirect_to @resume }
+      format.js
+    end
   end
 
   private

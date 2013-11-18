@@ -4,26 +4,13 @@
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1 desc">
         <h1>Work Experience</h1><br>
-        <% @resumes.each do |resume| %>
-        <h4><b><%= link_to resume.title, resume %></b></h4>
-          <% if !resume.company.nil? %>
-            <h4><%= resume.company %></h4>
-          <% end %>
-          <% if !resume.start_date.nil? || !resume.end_date.nil? %>
-            <h5><%= resume.start_date %> - <%= resume.end_date %></h5>
-          <% end %>
-          <h5><b>Description:</b><br>
-          <h5><%= resume.description %></h5>
-          <% if !resume.project.nil? %>
-          <h5><b>Project Desctription:</b> <%= resume.project %></h5>
-          <% end %>
-          <% if !resume.url.nil? %>
-            <p><i class="fa fa-link"></i> <%= link_to "Visit Site", resume.url, target: "_blank"%></p>
-          <% end %>
-        <% end %>
-        <br><br>
-        <p class="btn btn-default"><%= link_to "New Resume Entry", new_resume_path %></p>
-        <p class="btn btn-default"><%= link_to "Home", root_path %></p>
+
+        <%= render @resumes %>
+
+        <br />
+
+        <p class="btn btn-default"><%= link_to 'New Resume', new_resume_path, remote: true, id: :new_link %></p>
+
       </div>
     </div><!-- row -->
   </div><!-- container -->
