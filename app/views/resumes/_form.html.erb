@@ -1,4 +1,4 @@
-<%= form_for @resume, :html => {:multipart => true, :class => "form-group", remote: true} do |f| %>
+<%= form_for @resume, :html => {:multipart => true, :class => "form-group"} do |f| %>
 
   <% if @resume.errors.any? %>
     <div id="error_explanation" class="alert alert-danger">

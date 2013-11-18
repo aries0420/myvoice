@@ -12,11 +12,11 @@ class ResumesController < ApplicationController
 
     if @resume.save
       flash[:notice] = "New resume entry has been added."
-      # redirect_to resumes_path
-      respond_to do |format|
-        format.html { redirect_to @resume }
-        format.js
-      end
+      redirect_to resumes_path
+      # respond_to do |format|
+      #   format.html { redirect_to @resume }
+      #   format.js
+      # end
     else
       render "new"
     end
