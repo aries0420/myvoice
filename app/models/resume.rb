@@ -22,6 +22,7 @@ class Resume < ActiveRecord::Base
       resume.key = key
       resume.remote_image_url = resume.image.direct_fog_url(with_path: true)
       resume.save!
+      resume.update_column(:image_processed, true)
     end
   end
 end
