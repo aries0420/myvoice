@@ -53,6 +53,6 @@ class ResumesController < ApplicationController
   private
 
   def resume_params
-    params.require(:resume).permit(:title, :company, :description, :start_date, :end_date, :project, :rating, :url, :image)
+    params.require(:resume).permit(:title, :company, :description, :start_date, :end_date, :project, :rating, :url, :image, :remote_image_url)
   end
 end
