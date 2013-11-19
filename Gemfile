@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 1.2'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'fog'
+gem 'carrierwave_direct'
+gem 'sidekiq'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -55,7 +57,7 @@ group :development, :test do
   gem 'minitest-colorize'
   gem 'capybara-webkit'
   gem 'launchy'
-  gem 'ZenTest'
+  # gem 'ZenTest'
   gem 'pry-rails'
   gem 'pry-doc'
   gem 'pry-debugger'

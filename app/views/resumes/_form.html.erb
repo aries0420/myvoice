@@ -12,6 +12,10 @@
     </div>
   <% end %>
 
+  <%= f.hidden_field :key %>
+
+  <p>File: <%= @resume.image_name %></p>
+
   <div class="form-group">
     <%= f.label :title %>
     <%= f.text_field :title, class: "form-control" %>
@@ -43,10 +47,6 @@
   <div class="form-group">
     <%= f.label :url %>
     <%= f.text_field :url, class: "form-control" %>
-  </div>
-  <div class="form-group">
-    <%= f.label :image %>
-    <%= f.file_field :image, class: "form-control" %>
   </div>
   <div class="form-group">
     <%= f.label :remote_image_url, "or image URL" %>

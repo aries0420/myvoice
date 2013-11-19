@@ -1,10 +1,12 @@
 class ResumesController < ApplicationController
   def index
     @resumes = Resume.all
+    @uploader = Resume.new.image
+    @uploader.success_action_redirect = new_resume_url
   end
 
   def new
-    @resume = Resume.new
+    @resume = Resume.new(key: params[:key])
   end
 
   def create

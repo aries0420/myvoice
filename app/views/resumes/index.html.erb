@@ -7,6 +7,14 @@
 
         <%= render @resumes %>
 
+        <div class="form-group">
+          <%= direct_upload_form_for @uploader do |f| %>
+            <%= f.label :image %>
+            <%= f.file_field :image, class: "form-control" %>
+            <%= f.submit "Upload Image", class: "btn btn-green" %>
+          <% end %>
+        </div>
+
         <br />
 
         <p class="btn btn-default"><%= link_to 'New Resume', new_resume_path %></p>
