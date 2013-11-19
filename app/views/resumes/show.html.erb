@@ -23,7 +23,7 @@
       </div>
 
       <div class="col-lg-5 col-lg-offset-1 desc">
-        <%= image_tag @resume.image_url.to_s %>
+        <%= image_tag @resume.image_url(:thumb).to_s %>
         <% if !@resume.project.nil? %>
         <h3>Project Description</h3><br>
           <p><%= @resume.project %></p>
