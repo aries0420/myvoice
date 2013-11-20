@@ -24,6 +24,9 @@
   <body>
     <%= render "layouts/header" %>
 
+    <%= link_to_unless_current "English", locale: "en" %>
+    <%= link_to_unless_current "Wookieespeak", locale: "wk" %>
+
     <div class="col-lg-10 col-lg-offset-1 desc">
       <% flash.each do |key, value| %>
         <div class="alert <%= key == :alert ? "alert-danger" : "alert-info" %>">

@@ -1,6 +1,6 @@
 <div class="resumes" id="<%= dom_id(resume) %>">
 
-  <h4><b><%= link_to resume.title, resume %></b></h4>
+  <h4><b><%= link_to (t "resume.title"), resume %></b></h4>
   <p class="btn btn-default"><%= link_to "Edit Resume", edit_resume_path(resume) %></p>
   <p class="btn btn-default"><%= link_to "Delete Resume", resume, method: :delete, data: { confirm: "Are you sure you want to delete this resume entry?"}, remote: true %></p>
     <% if !resume.company.nil? %>

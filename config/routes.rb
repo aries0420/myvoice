@@ -6,16 +6,19 @@ Myvoice::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  resources :resumes
-
-  # You can have the root of your site routed with "root"
-  root 'static#home'
+  scope ":locale", locale: /#{I18n.available_locales.join("|")}/ do
+    resources :resumes
+    get '/resumes', to: 'resumes#index'
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
   get '/about', to: 'static#about'
   get '/contact', to: 'static#contact'
+
+  # You can have the root of your site routed with "root"
+  root 'static#home'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

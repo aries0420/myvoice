@@ -5,7 +5,7 @@
       <div class="col-lg-4 col-lg-offset-1 desc">
         <h3>Work Experience</h3>
         <br>
-        <h5><b>Title:</b> <%= @resume.title %></h5>
+        <h5><b>Title:</b> <%= t "@resume.title" %></h5>
         <% if !@resume.company.nil? %>
           <h5><b>Company:</b> <%= @resume.company %></h5>
         <% end %>
@@ -19,7 +19,8 @@
         <% end %>
         <% if !@resume.rating.nil? %>
           <h5><b>Rating:</b> <%= @resume.rating %></h5>
-        <% end %><br><br>
+        <% end %>
+        <h5>This entry was created at: <%= l @resume.created_at, format: :long %></h5><br><br>
       </div>
 
       <div class="col-lg-5 col-lg-offset-1 desc">
