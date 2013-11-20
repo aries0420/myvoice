@@ -30,6 +30,9 @@ gem 'carrierwave'
 gem 'rmagick'
 gem 'fog'
 
+# Rails engine that sets the Rails timezone to the browser time zone for each request.
+gem 'browser-timezone-rails'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

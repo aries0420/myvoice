@@ -44,6 +44,9 @@ GEM
       erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    browser-timezone-rails (0.0.6)
+      jquery-rails
+      rails (>= 3.1)
     builder (3.1.4)
     callsite (0.0.11)
     capybara (2.1.0)
@@ -220,6 +223,7 @@ DEPENDENCIES
   bcrypt-ruby (~> 3.0.0)
   better_errors
   binding_of_caller
+  browser-timezone-rails
   capybara-webkit
   carrierwave
   coffee-rails (~> 4.0.0)
