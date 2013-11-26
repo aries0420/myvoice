@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Myvoice::Application.config.secret_key_base = '0d38580b03ef0051f7e0f76aeec2a0063138c33fd791cf841612025f3c42c9653b662558a1065bf2b3676154794b06e193d1e827aadbffdeeb3d1f4420f61c2e'
+Myvoice::Application.config.secret_key_base = ENV["SECRET_TOKEN"]
