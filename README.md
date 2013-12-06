@@ -14,3 +14,6 @@ This is going to be the best portfolio site that I've ever built so far (compare
 
 ## Authors
 * Kangie Chan
+ 
+## Authors
+* MIT: 
